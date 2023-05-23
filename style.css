@@ -1,0 +1,118 @@
+:root {
+    --amarillo-oscuro: #FEE98D;
+    --amarillo-claro: #FCF6BD;
+    --verde-oscuro: #7FBBB2;
+    --verde-claro: #A5CFCD;
+    --azul--oscuro: #3681AB;
+    --azul-claro: #AED7ED;
+    --granate-oscuro: #4C0027;
+    --granate-claro: #EB8DB5;
+    --lato: 'Lato', sans-serif;
+    --sriracha: 'Sriracha', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: var(--lato);
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('pics/fondo-de-pantalla.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+.contenido h1 {
+    font-family: var(--sriracha);
+    font-size: 28px;
+    line-height: 28px;
+}
+.contenido p {
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+.contenido ul {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: grid;
+    list-style: none;
+    grid-row-gap: 24px;
+}
+.contenido li a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--sriracha);
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+.contenido-formulas {
+    width: 200px;
+    height: 40px;
+    border: 3px solid var(--amarillo-oscuro);
+    border-radius: 50px;
+    background-color: var(--amarillo-claro);
+}
+.contenido-porcentajes {
+    width: 200px;
+    height: 40px;
+    border: 3px solid var(--verde-oscuro);
+    border-radius: 50px;
+    background-color: var(--verde-claro);
+}
+.contenido-estadistica {
+    width: 200px;
+    height: 40px;
+    border: 3px solid var(--granate-oscuro);
+    border-radius: 50px;
+    background-color: var(--granate-claro);
+}
+.contenido-analisis {
+    width: 200px;
+    height: 40px;
+    border: 3px solid var(--azul--oscuro);
+    border-radius: 50px;
+    background-color: var(--azul-claro);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contenido ul {
+        padding-bottom: 12px;
+        padding-top: 24px;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .imagen {
+        width: 270px;
+        height: 270px;
+        margin-top: 12px;
+        border-radius: 12px;
+        background-image: url("pics/matematica-basica.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: -13px 13px 6px rgba(0, 0, 0, 0.16);
+        margin-bottom: 30px;
+    }
+}
+
+

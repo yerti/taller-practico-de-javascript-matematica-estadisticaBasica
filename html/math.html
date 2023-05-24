@@ -8,8 +8,120 @@
 </head>
 <body>
     <main>
-        <h1>Taller de Matemáticas con JavaScript</h1>
-        <p>Aprende a trabajar con matemáticas usando código javaScript </p>
+        <h1>Formulas basicas de Matemática</h1>
+        <div>
+            <section>
+                <h2>Cuadrado</h2>
+                <p>Para encontrar el area de un cuadrado se multiplica <strong>(lado * lado).</strong></p>
+                <p>Para encontrar el perimerto del cuadrado se suma todos sus lados o se multiplica <strong>(lado * 4).</strong></p>
+                <div>
+                    <label>Lado del cuadrado
+                        <input type="number" id="lado-cuadrado">
+                    </label>
+                    <button id="area-cuadrado">Area</button>
+                    <button id="perimetro-cuadrado">Perimetro</button>
+                </div>
+            </section>
+            <div>
+                <p id="resultado-cuadrado"></p>
+            </div>
+        </div>
+        <div>
+            <section>
+                <h2>Triángulo</h2>
+                <p>para encontrar el area del triangulo es igual a <strong>(base * haltura) /2</strong>.</p>
+                <p>para entonrar el preimetro del triangulo se suma todos sus lados <strong>(lado1 + lado2 + base)</strong></p>
+                <div>
+                    <label>Lado 1 del Triangulo
+                        <input type="number" id="lado1-triangulo">
+                    </label>
+                    <label>Lado 2 del Triangulo 
+                        <input type="number" id="lado2-triangulo">
+                    </label>
+                    <label>Base del triangulo ó lado 3
+                        <input type="numbre" id="base-triangulo">
+                    </label>
+                    <label>Altura del triangulo
+                        <input type="number" id="altura-triangulo">
+                    </label>
+                    <button id="area-triangulo">Area</button>
+                    <button id="perimetro-triangulo">Perimetro</button>
+                </div>
+            </section>
+            <div>
+                <p id="resultado-triangulo"></p>
+            </div>
+        </div>
+        <div>
+            <section>
+                <h2>Circulo</h2>
+                <p>Para encontrar el area de un circulo se multiplica <strong>(π * radio²).</strong></p>
+                <p>Para encontrar la circunferencia del circulo se multiplica el <strong>(π * diametros).</strong></p>
+                <div>
+                    <label>Radio del circulo
+                        <input type="number" id="radio-circulo">
+                    </label>
+                    <label>Diametro del circulo
+                        <input type="number" id="diametro-circulo">
+                    </label>
+                    <button id="area-circulo">Area</button>
+                    <button id="circunferencia-circulo">circunferencia</button>
+                </div>
+            </section>
+            <div>
+                <p id="resultado-circulo"></p>
+            </div>
+        </div>
+        <div>
+            <section>
+                <h2>Altura de un triángulo  Isósceles no Equilátero.</h2>
+                <p>Un triangulo Isósceles tiene 2 lados iguales y una base diferente.</p>
+                <p>Para encontrar la altura de un triangulo isoceles no equilatero se usa la siguiente formula:</p>
+                <img src="../pics/formula-de-triangulo-isosceles.png" alt="">
+                <div>
+                    <label>Lados iguales
+                        <input type="number" id="lados-iguales">
+                    </label>
+                    <label>Base
+                        <input type="number" id="base-trianguloI">
+                    </label>
+                    <button id="altura-de-trianguloI">altura</button>
+                </div>
+            </section>
+            <div>
+                <p id="altura-isosceles"></p>
+            </div>
+        </div>
+        <div>
+            <section>
+                <h2>Altura de un Triángulo escaleno si conocen todos sus lados</h2>
+                <div>
+                    <p>para encontrar la altura de un triangulo escaleno que conocemos todos sus lados usamos la siguiente formula:</p>
+                    <img src="../pics/formula-de-triangulo-escaleno.png" alt="">
+                </div>
+                <p>a, b, c son las longitudes de los lados del triángulo.</p>
+                <div>
+                    <p>S es el semiperímetro, el cual es igual a:</p>
+                    <img src="../pics/semiperimetro.png" alt="">
+                </div>
+                <p>a es igual a la base del triangulo</p>
+                <div>
+                    <label>Lado 1 del triangulo.
+                        <input type="number" id="lado1-traiangulo-escaleno">
+                    </label>
+                    <label>Lado 2 de triangulo.
+                        <input type="number" id="lado2-triangulo-escaleno">
+                    </label>
+                    <label>Base del triangulo escaleno ó lado 3.
+                        <input type="number" id="base-triangulo-escaleno">
+                    </label>
+                    <button id="altura-triangulo-escaleno">Altura</button>
+                </div>
+            </section>
+            <div>
+                <p id="resultado-escaleno"></p>
+            </div>
+        </div>
     </main>
 
     <script src="../js/math.js"></script>

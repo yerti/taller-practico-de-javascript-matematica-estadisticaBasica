@@ -5,120 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/math.css">
+
 </head>
 <body>
     <main>
         <h1>Formulas basicas de Matemática</h1>
-        <div>
-            <section>
-                <h2>Cuadrado</h2>
-                <p>Para encontrar el area de un cuadrado se multiplica <strong>(lado * lado).</strong></p>
-                <p>Para encontrar el perimerto del cuadrado se suma todos sus lados o se multiplica <strong>(lado * 4).</strong></p>
-                <div>
-                    <label>Lado del cuadrado
-                        <input type="number" id="lado-cuadrado">
-                    </label>
-                    <button id="area-cuadrado">Area</button>
-                    <button id="perimetro-cuadrado">Perimetro</button>
+            <div class="contenido-total">
+                <section class="contenido-texto">
+                    <h2>Cuadrado</h2>
+                    <p>_Para encontrar el area de un cuadrado se multiplica <strong>(lado * lado).</strong></p>                        <p>_Para encontrar el perimerto del cuadrado se suma todos sus lados o se multiplica <strong>(lado * 4).</strong></p>
+                    <div class="contenido-label">
+                        <label>Lado del cuadrado <br>
+                            <input type="number" id="lado-cuadrado">
+                        </label>
+                    </div>
+                </section>
+                <div class="contenido-botones">
+                    <button id="area-cuadrado" class="estilo-botones">Area</button>
+                    <button id="perimetro-cuadrado" class="estilo-botones">Perimetro</button>
                 </div>
-            </section>
-            <div>
+            </div>
+            <div class="resultado-cuadrado ocultar">
                 <p id="resultado-cuadrado"></p>
             </div>
-        </div>
-        <div>
-            <section>
-                <h2>Triángulo</h2>
-                <p>para encontrar el area del triangulo es igual a <strong>(base * haltura) /2</strong>.</p>
-                <p>para entonrar el preimetro del triangulo se suma todos sus lados <strong>(lado1 + lado2 + base)</strong></p>
-                <div>
-                    <label>Lado 1 del Triangulo
-                        <input type="number" id="lado1-triangulo">
-                    </label>
-                    <label>Lado 2 del Triangulo 
-                        <input type="number" id="lado2-triangulo">
-                    </label>
-                    <label>Base del triangulo ó lado 3
-                        <input type="numbre" id="base-triangulo">
-                    </label>
-                    <label>Altura del triangulo
-                        <input type="number" id="altura-triangulo">
-                    </label>
-                    <button id="area-triangulo">Area</button>
-                    <button id="perimetro-triangulo">Perimetro</button>
+        
+                <div class="contenido-total">
+                    <section class="contenido-texto">
+                        <h2>Triángulo</h2>
+                        <p>_para encontrar el area del triangulo es igual a <strong>(base * haltura) /2</strong>.</p>
+                        <p>_para entonrar el preimetro del triangulo se suma todos sus lados <strong>(lado1 + lado2 + base)</strong></p>
+                        <div class="contenido-label">
+                            <label>Lado 1 del Triangulo <br>
+                                <input type="number" id="lado1-triangulo">
+                            </label> <br>
+                            <label>Lado 2 del Triangulo <br>
+                                <input type="number" id="lado2-triangulo">
+                            </label> <br>
+                            <label>Base del triangulo ó lado 3 <br>
+                                <input type="numbre" id="base-triangulo">
+                            </label> <br>
+                            <label>Altura del triangulo <br>
+                                <input type="number" id="altura-triangulo">
+                            </label>
+                        </div>
+                    </section>
+                    <div class="contenido-botones">
+                        <button id="area-triangulo" class="estilo-botones">Area</button>
+                        <button id="perimetro-triangulo" class="estilo-botones">Perimetro</button>
+                    </div>
                 </div>
-            </section>
-            <div>
-                <p id="resultado-triangulo"></p>
+                <div class="resultado-triangulof ocultar">
+                    <p id="resultado-triangulo"></p>
+                </div>
+            <div class="contenido-total">
+                <section class="contenido-texto">
+                    <h2>Circulo</h2>
+                    <p>_Para encontrar el area de un circulo se multiplica <strong>(π * radio²).</strong></p>
+                    <p>_Para encontrar la circunferencia del circulo se multiplica el <strong>(π * diametros).</strong></p>
+                    <div class="contenido-label">
+                        <label>Radio del circulo <br>
+                            <input type="number" id="radio-circulo">
+                        </label> <br>
+                        <label>Diametro del circulo <br>
+                            <input type="number" id="diametro-circulo">
+                        </label>
+                    </div>
+                </section>
+                <div class="contenido-botones">
+                    <button id="area-circulo" class="estilo-botones">Area</button>
+                    <button id="circunferencia-circulo" class="estilo-botones">circunferencia</button></div>
             </div>
-        </div>
-        <div>
-            <section>
-                <h2>Circulo</h2>
-                <p>Para encontrar el area de un circulo se multiplica <strong>(π * radio²).</strong></p>
-                <p>Para encontrar la circunferencia del circulo se multiplica el <strong>(π * diametros).</strong></p>
-                <div>
-                    <label>Radio del circulo
-                        <input type="number" id="radio-circulo">
-                    </label>
-                    <label>Diametro del circulo
-                        <input type="number" id="diametro-circulo">
-                    </label>
-                    <button id="area-circulo">Area</button>
-                    <button id="circunferencia-circulo">circunferencia</button>
-                </div>
-            </section>
-            <div>
+            <div class="resultado-circulo ocultar">
                 <p id="resultado-circulo"></p>
             </div>
-        </div>
-        <div>
-            <section>
-                <h2>Altura de un triángulo  Isósceles no Equilátero.</h2>
-                <p>Un triangulo Isósceles tiene 2 lados iguales y una base diferente.</p>
-                <p>Para encontrar la altura de un triangulo isoceles no equilatero se usa la siguiente formula:</p>
-                <img src="../pics/formula-de-triangulo-isosceles.png" alt="">
-                <div>
-                    <label>Lados iguales
-                        <input type="number" id="lados-iguales">
-                    </label>
-                    <label>Base
-                        <input type="number" id="base-trianguloI">
-                    </label>
-                    <button id="altura-de-trianguloI">altura</button>
+            <div class="contenido-total"> 
+                <section class="contenido-texto">
+                    <h2>Altura de un triángulo  Isósceles no Equilátero.</h2>
+                    <p>_Un triangulo Isósceles tiene 2 lados iguales y una base diferente.</p>
+                    <p>_Para encontrar la altura de un triangulo isoceles no equilatero se usa la siguiente formula:</p>
+                    <img class="imagen-tisosceles" src="../pics/formula-de-triangulo-isosceles.png" alt="">
+                    <div class="contenido-label">
+                        <label>Lados iguales <br>
+                            <input type="number" id="lados-iguales">
+                        </label> <br>
+                        <label>Base <br>
+                            <input type="number" id="base-trianguloI">
+                        </label>
+                    </div>
+                </section>
+                <div class="contenido-botones">
+                    <button id="altura-de-trianguloI" class="estilo-botones">altura</button>
                 </div>
-            </section>
-            <div>
+            </div>
+            <div class="resultado-isosceles ocultar">
                 <p id="altura-isosceles"></p>
             </div>
-        </div>
-        <div>
-            <section>
-                <h2>Altura de un Triángulo escaleno si conocen todos sus lados</h2>
-                <div>
-                    <p>para encontrar la altura de un triangulo escaleno que conocemos todos sus lados usamos la siguiente formula:</p>
-                    <img src="../pics/formula-de-triangulo-escaleno.png" alt="">
-                </div>
-                <p>a, b, c son las longitudes de los lados del triángulo.</p>
-                <div>
-                    <p>S es el semiperímetro, el cual es igual a:</p>
-                    <img src="../pics/semiperimetro.png" alt="">
-                </div>
-                <p>a es igual a la base del triangulo</p>
-                <div>
-                    <label>Lado 1 del triangulo.
-                        <input type="number" id="lado1-traiangulo-escaleno">
-                    </label>
-                    <label>Lado 2 de triangulo.
-                        <input type="number" id="lado2-triangulo-escaleno">
-                    </label>
-                    <label>Base del triangulo escaleno ó lado 3.
-                        <input type="number" id="base-triangulo-escaleno">
-                    </label>
-                    <button id="altura-triangulo-escaleno">Altura</button>
-                </div>
-            </section>
-            <div>
+            <div class="contenido-total">
+                <section class="contenido-texto">
+                    <h2>Altura de un Triángulo escaleno si conocen todos sus lados</h2>
+                    <div>
+                        <p>_para encontrar la altura de un triangulo escaleno que conocemos todos sus lados usamos la siguiente formula:</p>
+                        <img src="../pics/formula-de-triangulo-escaleno.png" alt="" class="imagen-escaleno">
+                    </div>
+                    <p>_a, b, c son las longitudes de los lados del triángulo.</p>
+                    <div>
+                        <p>_S es el semiperímetro, el cual es igual a:</p>
+                        <img src="../pics/semiperimetro.png" alt="" class="imagen-semiperimetro">
+                    </div>
+                    <p>_a es igual a la base del triangulo</p>
+                    <div class="contenido-label">
+                        <label>Lado 1 del triangulo. <br>
+                            <input type="number" id="lado1-traiangulo-escaleno">
+                        </label> <br>
+                        <label>Lado 2 de triangulo. <br>
+                            <input type="number" id="lado2-triangulo-escaleno">
+                        </label> <br>
+                        <label>Base del triangulo escaleno ó lado 3. <br>
+                            <input type="number" id="base-triangulo-escaleno">
+                        </label> <br>
+                    </div>
+                    <div class="contenido-botones">
+                        <button id="altura-triangulo-escaleno" class="estilo-botones">Altura</button>
+                    </div>
+                </section>
+            </div>
+            <div class="resultado-escaleno ocultar">
                 <p id="resultado-escaleno"></p>
             </div>
         </div>
